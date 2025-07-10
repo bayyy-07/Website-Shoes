@@ -1,0 +1,157 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	outline: none;
+	border: none;
+	text-decoration: none;
+}
+
+body {
+	font-family: "poppins", sans-serif;
+	background-color: #ffffff;
+	background-position: center;
+	background-size: cover;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+
+	height: 100%;
+
+	color: #fff;
+}
+
+/* Style Navbar  */
+.navbar {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 0.3rem 2%;
+	background-color: #5a5c69;
+	border-bottom: 1px solid rgb(2, 2, 2);
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 99999;
+}
+
+.navbar .navbar-logo {
+	font-size: 1.6rem;
+	font-weight: 700;
+	color: #ffffff;
+	font-family: "Courier New", Courier, monospace;
+
+	box-shadow: 0 0 30px rgb(0, 0, 0, 0.5);
+}
+.navbar .navbar-logo:hover {
+	color: #77d1f3;
+}
+
+.navbar .navbar-nav {
+	display: flex;
+	align-items: center;
+}
+
+.navbar .navbar-nav a {
+	font-size: 1.5rem;
+	margin: 1rem;
+	color: #fffefe;
+}
+
+.navbar .navbar-nav a:hover {
+	color: #96deea;
+}
+
+.navbar .navbar-nav a::after {
+	content: "";
+
+	padding-bottom: 0.5;
+	border-bottom: 0.1rem solid #77d1f3;
+	transform: scaleX(0);
+	transition: 0.3s;
+}
+
+.navbar .navbar-nav a:hover::after {
+	transform: scaleX(1);
+}
+
+/* Form Login */
+
+.form-register {
+	width: 400px;
+	font-size: 1rem;
+	align-items: center;
+	background-color: rgb(255, 255, 255);
+	border: 2px solid #dcdcdc;
+	margin: 80px auto;
+	margin-top: 10%;
+	padding: 30px 20px;
+	border-radius: 4px;
+	box-shadow: 0 0 20px rgb(0, 0, 0, 0.5);
+}
+
+h1 {
+	font-size: 12pt;
+	text-align: center;
+	text-transform: uppercase;
+	color: #5a5c69;
+	margin: 5px auto;
+}
+
+form {
+	font-size: 11pt;
+}
+
+input {
+	background: rgb(233, 233, 233);
+	padding: 10px;
+	width: 308px;
+	height: 40px;
+	margin: 10px auto;
+	border-radius: 4px;
+}
+
+button {
+	color: #fff;
+	margin: 10px auto;
+	font-size: 11pt;
+	text-align: center;
+	width: 308px;
+	height: 40px;
+	padding: 10px 20px;
+	border: none;
+	border-radius: 3px;
+	cursor: pointer;
+	background: rgb(57, 189, 209);
+}
+
+.form-register .status {
+	width: 160px;
+	border: 1px solid #0000;
+	float: left;
+}
+
+.link-register {
+	display: flex;
+	margin: 10px auto;
+	align-items: center;
+	padding-left: 60px;
+}
+
+h2 {
+	font-size: 8pt;
+	text-align: center;
+	color: rgb(0, 0, 0);
+}
+
+.link-register a {
+	font-size: 9pt;
+	color: rgb(57, 189, 209);
+}
+
+.mb-control legend {
+	font-size: 6pt;
+	float: left;
+	padding-left: 25px;
+	color: #ff0e0e;
+}
